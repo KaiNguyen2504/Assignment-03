@@ -1,0 +1,54 @@
+@media (max-width: 992px) {
+  /* ========= navbar =========== */
+  .nav-bar-container-center {
+    display: none;
+  }
+
+  /* ========== target and info =================  */
+  .about-container {
+    height: 100%;
+    padding: 10px;
+  }
+  #job-info .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* ================== job-info ================= */
+  #job-experience,
+  #education,
+  #activity {
+    .box {
+      text-align: start;
+      height: auto;
+    }
+  }
+
+  /* ================== certificate ================= */
+
+  .certificate-box {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+  }
+  .certificate-box img {
+    width: 100%;
+    height: 150px;
+  }
+
+  /* ============================================ CSS FOR PROJECT ====================================== */
+
+  .project-container {
+    grid-template-columns: repeat(3, 260px);
+    grid-gap: 10px;
+  }
+
+  .project-box {
+    grid-template-rows: 160px 130px 40px 250px;
+  }
+
+  .project-box img {
+    width: 255px;
+    height: 150px;
+  }
+}

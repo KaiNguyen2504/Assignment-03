@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+  /* ========= navbar =========== */
+
+  .nav-bar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -40px;
+  }
+
+  .nav-bar-container > * {
+    justify-content: left;
+    padding-left: 20px;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  /* ================== job-info ================= */
+
+  #job-info .container {
+    flex-direction: column;
+    width: 450px;
+  }
+
+  /* ================== certificate ================= */
+
+  .certificate-group {
+    display: block;
+  }
+  .certificate-box {
+    border-bottom: 2px solid #d6c08d;
+    padding-top: 10px;
+  }
+
+  .certificate-box img {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+  }
+
+  /* ----------------create Horizontal Line ---------------------- */
+  .certificate-group::after,
+  .certificate-group::before {
+    background-color: #f7f7f7;
+    width: 0;
+    height: 0;
+  }
+
+  /* ============================================ CSS FOR PROJECT ====================================== */
+
+  .project-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-box img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-box {
+    grid-template-rows: 210px 75px 30px 190px;
+  }
+
+  /* ==================== Footer ================== */
+  .footer-menu {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+  }
+}

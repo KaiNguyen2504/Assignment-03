@@ -1,0 +1,460 @@
+/* ----------------------------------- All ------------------------------------- */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5em;
+  color: #292929;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #292929;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+section {
+  margin: 20px 40px;
+  line-height: 1.5em;
+}
+
+/* ----------------------banner---------------------- */
+.banner {
+  padding: 50px;
+  background-image: url(../images/banner-2.jpg);
+  /* width: 100%; */
+  height: 420px;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-title {
+  position: absolute;
+  color: #f7f7f7;
+  line-height: 2em;
+  width: 100%;
+  text-align: center;
+}
+.banner-title h1 {
+  font-weight: 60px;
+}
+
+/*---------------------------------- navigation -------------------------------*/
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 30px 20px;
+}
+
+.nav-bar-container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-container > * {
+  width: 142px;
+  height: 60px;
+  border: 2px solid #f7f7f7;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex; /*-----------------flex để căn giữa text trong box--------------------*/
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-container i {
+  letter-spacing: 3px;
+  color: #292929;
+  margin-top: -4px;
+}
+
+.nav-bar-container-center {
+  text-transform: none;
+  flex-direction: column;
+  border: none;
+}
+
+/* .nav-bar-container-center span {
+  font-size: 11px;
+  opacity: 0.5;
+} */
+.nav-bar-container a:hover {
+  background-color: #ff7722;
+  /* color: #f7f7f7; */
+  border-radius: 10px;
+}
+
+/* ==========img avatar================== */
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  border: 10px solid white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* ------------------------------------css icon change color on hover------------------------- */
+
+/* ----------------------------------target and info----------------------------- */
+
+.about-container {
+  /* display: grid; */
+  /* grid-template-columns: 50% 50%; */
+  background-color: #f7f7f770;
+  /* grid-column-gap: 10px; */
+  height: 100%;
+  padding: 0 30px;
+}
+
+.mt-40-info {
+  list-style: none;
+}
+#about .section-title {
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+#personal-info > * {
+  padding-left: 5px;
+}
+.icons-info {
+  margin: 20px 0 20px 5px;
+  letter-spacing: 8px;
+  color: #ff7722;
+}
+
+.icons-info span:hover {
+  cursor: pointer;
+}
+
+/*----------------------------------------- Main info ----------------------------------------------*/
+#job-info .container {
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 350px); */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* grid-gap: 15px; */
+  justify-content: center;
+}
+/* ---------------------------------------- background for time ------------------------ */
+.btn-primary {
+  padding: 5px;
+  background-color: #ff7722;
+  border-radius: 23%;
+  font-family: sans-serif;
+  font-style: normal;
+  color: white;
+}
+
+/* ============================================================ box for 6 items ============================================================ */
+.box-details {
+  border: 2px solid lightslategray;
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: 75% 25%;
+}
+
+/* -----------box title--------------- */
+.box-details h1 {
+  /* grid-column: 1/ 4; */
+  height: 150px;
+  text-align: center;
+  display: flex; /*-----------------flex để căn giữa text trong box--------------------*/
+  align-items: center;
+  padding-left: 10px;
+  /* background-color: red; */
+}
+
+/* -----------box icon--------------- */
+.box-details span {
+  font-size: 40px;
+  height: 150px;
+  /* grid-column: 4/5; */
+  text-align: center;
+  display: flex; /*-----------------flex để căn giữa text trong box--------------------*/
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+/* -----------box content--------------- */
+.box {
+  grid-column: 1/-1;
+  padding-left: 30px;
+  /* background-color: aqua; */
+}
+
+#job-experience,
+#education,
+#activity {
+  .box {
+    text-align: start;
+    height: auto;
+  }
+}
+
+.details-list {
+  padding-bottom: 30px;
+}
+
+.detail p {
+  padding-bottom: 10px;
+}
+
+.details-list li {
+  list-style: " - ";
+  line-height: 1.5em;
+  list-style-position: inside;
+}
+
+/* ------------------------- blue pointer for experience, education, activity ---------------------------------- */
+#job-experience,
+#education,
+#activity {
+  .detail {
+    margin: 0;
+    padding-left: 15px;
+    position: relative;
+  }
+}
+
+.detail h4::before {
+  content: " ";
+  background-color: #ff7722;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 9px;
+  left: -8px;
+  height: 8px;
+  width: 8px;
+}
+
+/* ============================================================= CSS FOR HOBBIES, LANGUAGE, SKILLS ============================================= */
+#hobbies,
+#language,
+#skills {
+  .box {
+    height: auto;
+  }
+}
+
+/* --------------------------------------------------- hobbies---------------------------------------- */
+
+.hobbies-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: -25px;
+}
+
+.hobbies-detail {
+  text-align: center;
+}
+
+.hobbies-detail i {
+  font-size: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid #ff7722;
+  opacity: 0.5;
+  padding-top: 6px;
+  align-items: center;
+}
+
+.hobbies-detail p {
+  padding-top: 8px;
+}
+
+/* ------------------------------------ language, skills ----------------------- */
+.color-label {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: #ff7722;
+}
+
+.color-label:first-child {
+  margin-left: 3px;
+}
+
+.color-grey {
+  background-color: #f7f7f7;
+}
+
+.color-group {
+  padding-bottom: 15px;
+}
+
+/* ============================================================= CSS FOR CERTIFICATE ============================================= */
+#certificate .container {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+#certificate .section-title {
+  padding: 20px;
+}
+.certificate-box img {
+  width: 250px;
+  height: 180px;
+  padding-left: 5px;
+}
+.right-col h4 {
+  padding-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right-col ul {
+  list-style-type: " - ";
+  list-style-position: inside;
+  color: #292929;
+}
+
+.certificate-group {
+  padding-left: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  position: relative;
+}
+
+/* ----------------create vertical line---------------------- */
+.certificate-group::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 47%;
+  top: 0px;
+  left: 50%;
+  background-color: #d6c08d;
+}
+
+/* ----------------create Horizontal Line ---------------------- */
+.certificate-group::before {
+  content: "";
+  display: block; /*----------để cho đường nằm ngang-------------------*/
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background-color: #d6c08d;
+}
+
+.certificate-box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* ============================================ CSS FOR PROJECT ====================================== */
+#project .container {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  /* background-color: #f7f7f7; */
+}
+
+#project .section-title {
+  padding: 20px;
+}
+.project-box {
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-rows: 215px 65px 30px 160px;
+  gap: 15px;
+  border: 2px solid #f7f7f7;
+  border-top: none;
+}
+
+.project-box img {
+  width: 395px;
+  height: 200px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-gap: 25px;
+  /* border: 2px solid red; */
+  padding: 5px;
+  justify-content: center;
+}
+.project-title {
+  font-weight: 50px;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.project-time {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 2px;
+}
+
+.project-time-user {
+  display: flex;
+  padding: 7px;
+  gap: 5px;
+}
+
+.project-time-user i {
+  color: #ff7722;
+  margin-top: 2px;
+}
+#project {
+  table,
+  tr,
+  td {
+    border-top: 2px solid #f7f7f7;
+    border-collapse: collapse;
+  }
+}
+
+/* ======================================= Footer ======================================================== */
+section #footer {
+  margin: 0 -40px;
+}
+
+#footer .container {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 15px;
+}
+
+.footer-menu i {
+  color: #ff7722;
+  font-size: 30px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.footer-menu li:hover {
+  cursor: pointer;
+}
+
+/* ======================== Hidden ============================ */
+
+.hidden {
+  display: none;
+}

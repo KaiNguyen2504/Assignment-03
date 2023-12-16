@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="./css/laptop.css">
+	<link rel="stylesheet" href="./css/tablet.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<link rel="stylesheet" href="./css/font.css">
+	<title>Assignment 03</title>
+</head>
+
+<body>
+	<header>
+		<!------------------------- banner ------------------->
+		<div class="banner">
+			<div class="banner-title">
+				<h1>Nguyễn Văn Khải</h1>
+				<span>FullStack Developer</span>
+			</div>
+		</div>
+
+		<!--------------------------- navigation --------------------->
+		<section id="nav-bar">
+			<nav class="nav-bar-container">
+				<a href="#"><i class="fa fa-user"></i>Thông tin</a>
+				<a href="#"><i class="fa fa-sticky-note"></i>Lý lịch</a>
+
+				<a class="nav-bar-container-center" href="#">
+					<!-- <h3>Nguyễn Văn Khải</h3>
+					<span>FullStack Developer</span> -->
+					<img class="avatar-img" src="images/avatar.jpg" alt="avatar-img">
+				</a>
+
+				<a href="#"><i class="fa fa-envelope"></i>Chứng chỉ</a>
+				<a href="#"><i class="fa fa-star"></i>Dự Án</a>
+			</nav>
+		</section>
+	</header>
+
+	<main>
+		<!-- target and info -->
+		<section id="about" class="bg-grey">
+			<div class="about-container row">
+				<!-------------------------------------- target ------------------------------->
+				<div id="target" class="col-12 col-md-6">
+					<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+					<p>
+						Là một học viên đang học chương trình đào tạo lập trình của FUNiX. Em mong muốn mình có thể vận dụng những
+						kiến thức đã được trau dồi và không ngừng học hỏi phát triển bản thân, qua đó ứng tuyển và hoàn thành tốt
+						công việc Developer của bản thân.
+					</p>
+				</div>
+				<!-------------------------------------------- info ------------------------------>
+				<div id="personal-info" class="col-12 col-md-6">
+					<h1 class="section-title">Thông tin cá nhân</h1>
+					<div class="info-container hidden">
+						<ul class="mt-40-info">
+							<li><span>Giới tính</span> : Nam</li>
+							<li><span>Ngày sinh</span> : 04/03/2000</li>
+							<li><span>Điện thoại</span> : 0987654322</li>
+							<li><span>Email</span> : khainvfx31226@funix.edu.vn</li>
+							<li><span>Địa chỉ</span> : Quận Tân Bình, TPHCM</li>
+							<li><span>Website</span> : http://127.0.0.1:5501/index.html</li>
+						</ul>
+
+						<!-- icons -->
+						<div class="icons-info">
+							<span><i class="fa fa-twitter"></i></span>
+							<span><i class="fa fa-facebook"></i></span>
+							<span><i class="fa fa-google-plus"></i></span>
+							<span><i class="fa fa-linkedin"></i></span>
+						</div>
+					</div>
+
+					<!-- email form check -->
+					<form class="email-form">
+						<div class="form-group">
+							<label for="inputEmail">Email address</label>
+							<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+								placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">Hãy nhập email để xác thực</small>
+						</div>
+						<button type="button" class="btn btn-primary" id="btnEmailSubmit">Xác nhận</button>
+					</form>
+
+				</div>
+			</div>
+		</section>
+
+		<!-----------------------------------------Main info --------------------------------------->
+		<section id="job-info">
+			<div class="container">
+				<div class="row col-12 col-md-6 col-lg-12">
+					<div class="row g-3 g-md-5 g-lg-3">
+
+						<!-- experience -->
+						<div id="job-experience" class="box-details col-12 col-lg-4" onmouseover="handleMouseOver(this)"
+							onmouseout="handleMouseOut(this)">
+							<h1>Kinh nghiệm</h1>
+							<span><i class="fa fa-briefcase"></i></span>
+
+							<div class="box hidden">
+								<div class="detail">
+									<h4>Thực tập sinh kỹ sư phát triển phần mềm - CyberLogitec Vietnam</h4>
+									<p>06/2022 - 09/2022</p>
+									<ul class="details-list">
+										<li>Rèn luyện kiến thức chuyên môn và làm một số bài tập nhỏ (SQL, HTML, CSS, Java) thông qua các
+											buổi
+											đào tạo</li>
+										<li>Tham gia cùng nhóm phát triển một dự án nhỏ bằng ngôn ngữ lập trình Java (website thương
+											mại điện tử) do teamlead chỉ định.</li>
+									</ul>
+								</div>
+
+								<div class="detail">
+									<h4>Kỹ sư phần mềm + Tư vấn viên kỹ thuật - Công ty Cổ phần Công nghệ SAPO</h4>
+									<p>11/2022 - <i class="btn-primary">Hiện tại</i></p>
+									<ul class="details-list">
+										<li>Học hỏi kiến thức, công nghệ và tính năng của phần mềm bán hàng Sapo FnB.</li>
+										<li>Triển khai phần mềm và hướng dẫn khách hàng sử dụng Sapo FnB.</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="control-group hidden">
+								<button type="button" class="btn btn-info btn-view-more" onclick="displayView(this)">View
+									More</button>
+							</div>
+
+						</div>
+
+						<!-- activity -->
+						<div id="activity" class="box-details col-12 col-lg-4" onmouseover="handleMouseOver(this)"
+							onmouseout="handleMouseOut(this)">
+							<h1>Hoạt động</h1>
+							<span><i class="fa fa-futbol-o" aria-hidden="true"></i></span>
+
+							<div class="box hidden">
+								<div class="detail">
+									<h4>Hutech-VJIT Football 2019</h4>
+									<p>06/2019 - 08/2019</p>
+									<ul class="details-list">
+										<li>Giải 1 bảng A</li>
+									</ul>
+								</div>
+
+								<div class="detail">
+									<h4>Câu lạc bộ Bóng chuyền Hutech</h4>
+									<p>06/2019 - 11/2022</p>
+									<ul class="details-list">
+										<li>Thành viên câu lạc bộ</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="control-group hidden">
+								<button type="button" class="btn btn-info btn-view-more" onclick="displayView(this)">View
+									More</button>
+							</div>
+
+						</div>
+
+						<!-- education -->
+						<div id="education" class="box-details col-12 col-lg-4" onmouseover="handleMouseOver(this)"
+							onmouseout="handleMouseOut(this)">
+							<h1>Học vấn</h1>
+							<span><i class="fa fa-book" aria-hidden="true"></i></span>
+
+							<div class="box hidden">
+								<div class="detail">
+									<h4>Đại Học Công Nghệ TPHCM - Hutech</h4>
+									<p>09/2018 - 12/2022</p>
+									<ul class="details-list">
+										<li>Chuyên ngành: Kỹ thuật phần mềm.</li>
+										<li>GPA: 3.2 / 4</li>
+									</ul>
+								</div>
+
+								<div class="detail">
+									<h4>Funix</h4>
+									<p>11/2023 - <i class="btn-primary">Hiện tại</i></p>
+									<ul class="details-list">
+										<li>Học quá trình đào tạo Fullstack Developer.</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="control-group hidden">
+								<button type="button" class="btn btn-info btn-view-more" onclick="displayView(this)">View
+									More</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row col-12 col-md-6 col-lg-12">
+					<div class="row g-3 g-md-5 g-lg-3">
+
+						<!------------------------------- hobbies ----------------------------------->
+						<div id="hobbies" class="box-details col-12 col-lg-4" onmouseover="handleMouseOver(this)"
+							onmouseout="handleMouseOut(this)">
+							<h1>Sở thích</h1>
+							<span><i class="fa fa-smile-o"></i></span>
+
+							<div class="hobbies-box box hidden">
+								<div class="hobbies-detail">
+									<i class="fa fa-spotify"></i>
+									<p>Âm nhạc</p>
+								</div>
+
+								<div class="hobbies-detail">
+									<i class="fa fa-futbol-o"></i>
+									<p>Thể thao</p>
+								</div>
+
+								<div class="hobbies-detail">
+									<i class="fa fa-film"></i>
+									<p>Đi xem phim</p>
+								</div>
+
+								<div class="hobbies-detail">
+									<i class="fa fa-coffee"></i>
+									<p>Đi cafe</p>
+								</div>
+							</div>
+
+							<div class="control-group hidden">
+								<button type="button" class="btn btn-info btn-view-more" onclick="displayView(this)">View
+									More</button>
+							</div>
+
+						</div>
+
+						<!---------------------------------------- skills ---------------------------------------------->
+						<div id="skills" class="box-details col-12 col-lg-4" onmouseover="handleMouseOver(this)"
+							onmouseout="handleMouseOut(this)">
+
+							<h1>Kỹ năng</h1>
+							<span><i class="fa fa-cog" aria-hidden="true"></i></span>
+
+							<div class="box hidden">
+								<div class="box-detail-2">
+									<p>HTML/CSS - Intermediate</p>
+									<div class="color-group">
+										<div class="color-label"></div>
+										<div class="color-label"></div>
+										<div class="color-label color-grey"></div>
+									</div>
+								</div>
+
+								<div class="box-detail-2">
+									<p>Javascript - Fundamental</p>
+									<div class="color-group">
+										<div class="color-label"></div>
+										<div class="color-label color-grey"></div>
+										<div class="color-label color-grey"></div>
+									</div>
+								</div>
+
+								<div class="box-detail-2">
+									<p>SQL Server - Fundamental</p>
+									<div class="color-group">
+										<div class="color-label"></div>
+										<div class="color-label color-grey"></div>
+										<div class="color-label color-grey"></div>
+									</div>
+								</div>
+
+								<div class="box-detail-2">
+									<p>Bootstrap 5 - Intermediate</p>
+									<div class="color-group">
+										<div class="color-label"></div>
+										<div class="color-label"></div>
+										<div class="color-label color-grey"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="control-group hidden">
+								<button type="button" class="btn btn-info btn-view-more" onclick="displayView(this)"> View
+									More</button>
+							</div>
+						</div>
+
+
+						<!----------------------------------- language ----------------------------------------------->
+
+						<div id="language" class="box-details col-12 col-lg-4" onmouseover="handleMouseOver(this)"
+							onmouseout="handleMouseOut(this)">
+							<h1>Ngôn ngữ</h1>
+							<span><i class="fa fa-language" aria-hidden="true"></i></span>
+
+							<div class="box hidden">
+								<div class="box-detail-2">
+									<p>Tiếng anh: IELTS - 6.0</p>
+									<div class="color-group">
+										<div class="color-label"></div>
+										<div class="color-label"></div>
+										<div class="color-label color-grey"></div>
+									</div>
+								</div>
+
+								<div class="box-detail-2">
+									<p>Tiếng nhật: JLPT - N3</p>
+									<div class="color-group">
+										<div class="color-label"></div>
+										<div class="color-label"></div>
+										<div class="color-label color-grey"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="control-group hidden">
+								<button type="button" class="btn btn-info btn-view-more" onclick="displayView(this)">View
+									More</button>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!---------------------------- certificate ------------------->
+		<section id="certificate">
+			<div class="container">
+				<h1 class="section-title">
+					Chứng chỉ - Giải thưởng
+				</h1>
+				<div class="certificate-group">
+					<div class="certificate-box">
+						<img src="images/cetificate_hutech.jpg" alt="certificate_1">
+						<div class="right-col">
+							<h4>CHỨNG CHỈ TỐT NGHIỆP ĐẠI HỌC HUTECH</h4>
+							<ul>
+								<li>2022</li>
+								<li>GPA: 3.2 / 4</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="certificate-box">
+						<img src="images/cetificate_hutech.jpg" alt="certificate_1">
+						<div class="right-col">
+							<h4>CHỨNG CHỈ TIẾNG ANH</h4>
+							<ul>
+								<li>2019</li>
+								<li>IELTS - 6.0</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="certificate-box">
+						<img src="images/cetificate_hutech.jpg" alt="certificate_1">
+						<div class="right-col">
+							<h4>CHỨNG CHỈ TIẾNG NHẬT</h4>
+							<ul>
+								<li>2022</li>
+								<li>JLPT - N3</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!---------------------------- project ------------------->
+		<section id="project">
+			<div class="container">
+				<h1 class="section-title">
+					Dự án
+				</h1>
+				<div class="project-container">
+					<div id="project-webcoffee" class="project-box">
+						<img src="images/project_1.png" alt="project_img_1">
+						<h4 class="project-title"><a href="digital-cv.html?project-webcoffee" target="_blank">Website cửa hàng
+								bán cà
+								phê</a></h4>
+						<div class="project-time">
+							<i class="btn-primary">2021</i>
+							<div class="project-time-user">
+								<i class="fa fa-user"></i>
+								<p>Funix</p>
+							</div>
+							<div class="project-time-user">
+								<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+								<p>Developer</p>
+							</div>
+						</div>
+						<div class="project-description">
+							<table>
+								<tr>
+									<td>Mô tả:</td>
+									<td>Cho phép người dùng đặt nước uống, đồ ăn qua website.</td>
+								</tr>
+
+								<tr>
+									<td>Nhiệm vụ:</td>
+									<td>Phân tích, thiết kế xây dựng dữ liệu, xây dựng giao diện và chức năng website.</td>
+								</tr>
+
+								<tr>
+									<td>Công nghệ:</td>
+									<td>ASP.NET, C#, MVC, HTML, CSS, Javascript, SQLServer</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div id="project-renthouse" class="project-box">
+						<img src="images/project_2.png" alt="project_img_2">
+						<h4 class="project-title"><a href="digital-cv.html?project-renthouse" target="_blank">Website tìm kiếm phòng
+								trọ, tìm người ở ghép theo sở thích</a></h4>
+						<div class="project-time">
+							<i class="btn-primary">2021</i>
+							<div class="project-time-user">
+								<i class="fa fa-user"></i>
+								<p>Funix</p>
+							</div>
+							<div class="project-time-user">
+								<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+								<p>Developer</p>
+							</div>
+
+						</div>
+						<div class="project-description">
+							<table>
+								<tr>
+									<td>Mô tả:</td>
+									<td>Cho phép người dùng đăng phòng trọ cho thuê, tìm phòng trọ, tìm người ở ghép.
+									</td>
+								</tr>
+
+								<tr>
+									<td>Nhiệm vụ:</td>
+									<td>Phát triển, tối ưu code và xử lý lỗi.</td>
+								</tr>
+
+								<tr>
+									<td>Công nghệ:</td>
+									<td>PHP, HTML, CSS, Javascript, MySQL</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div id="project-webcv" class="project-box">
+						<img src="images/project_3.png" alt="project_img_3">
+						<h4 class="project-title"><a href="digital-cv.html?project-webcv" target="_blank">Website CV cá nhân</a>
+						</h4>
+						<div class="project-time">
+							<i class="btn-primary">2023</i>
+							<div class="project-time-user">
+								<i class="fa fa-user"></i>
+								<p>Funix</p>
+							</div>
+							<div class="project-time-user">
+								<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+								<p>Developer</p>
+							</div>
+						</div>
+						<div class="project-description">
+							<table>
+								<tr>
+									<td>Mô tả:</td>
+									<td>Trang web bao gồm một số thông tin cá nhân.</td>
+								</tr>
+
+								<tr>
+									<td>Nhiệm vụ:</td>
+									<td>Phân tích, thiết kế xây dựng dữ liệu, xây dựng giao diện và chức năng website.</td>
+								</tr>
+
+								<tr>
+									<td>Công nghệ:</td>
+									<td>HTML, CSS</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- footer -->
+	<footer>
+		<section id="footer">
+			<div class="container">
+				<ul class="footer-menu">
+					<li>
+						<i class="icon-facebook-circled"></i>
+						Facebook
+					</li>
+					<li>
+						<i class="icon-linkedin-circled"></i>
+						Linkedin
+					</li>
+					<li>
+						<i class="icon-github-circled"></i>
+						Github
+					</li>
+				</ul>
+			</div>
+		</section>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	<script src="js/digital-cv.js"></script>
+
+</body>
+
+</html>
